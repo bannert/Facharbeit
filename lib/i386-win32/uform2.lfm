@@ -1,0 +1,91 @@
+object Form2: TForm2
+  Left = 1120
+  Height = 240
+  Top = 390
+  Width = 320
+  Caption = 'Form2'
+  ClientHeight = 240
+  ClientWidth = 320
+  OnCreate = FormCreate
+  LCLVersion = '1.6.0.4'
+  object edKNR: TEdit
+    Left = 96
+    Height = 23
+    Top = 40
+    Width = 80
+    NumbersOnly = True
+    TabOrder = 0
+  end
+  object edBLZ: TEdit
+    Left = 184
+    Height = 23
+    Top = 40
+    Width = 80
+    NumbersOnly = True
+    TabOrder = 1
+  end
+  object ComboBox1: TComboBox
+    Left = 24
+    Height = 23
+    Top = 40
+    Width = 64
+    ItemHeight = 15
+    Style = csDropDownList
+    TabOrder = 2
+  end
+  object Edit3: TEdit
+    Left = 24
+    Height = 23
+    Top = 120
+    Width = 240
+    TabOrder = 3
+  end
+  object Label1: TLabel
+    Left = 24
+    Height = 15
+    Top = 24
+    Width = 62
+    Caption = 'Ländercode'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 96
+    Height = 15
+    Top = 24
+    Width = 78
+    Caption = 'Kontonummer'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 184
+    Height = 15
+    Top = 24
+    Width = 20
+    Caption = 'BLZ'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 24
+    Height = 15
+    Top = 104
+    Width = 27
+    Caption = 'IBAN'
+    ParentColor = False
+  end
+  object btCreate: TButton
+    Left = 24
+    Height = 25
+    Top = 72
+    Width = 240
+    Caption = 'Create'
+    TabOrder = 4
+  end
+  object btCheck: TButton
+    Left = 24
+    Height = 25
+    Top = 152
+    Width = 240
+    Caption = 'Check'
+    TabOrder = 5
+  end
+end

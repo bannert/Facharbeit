@@ -1,0 +1,207 @@
+object IBANCalc: TIBANCalc
+  Left = 1554
+  Height = 185
+  Top = 148
+  Width = 273
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'IBAN Calculator'
+  ClientHeight = 185
+  ClientWidth = 273
+  Constraints.MaxHeight = 185
+  Constraints.MaxWidth = 273
+  Constraints.MinHeight = 185
+  Constraints.MinWidth = 273
+  DefaultMonitor = dmPrimary
+  Font.Height = -11
+  Font.Name = 'Roboto'
+  Font.Quality = fqCleartype
+  Position = poDesktopCenter
+  LCLVersion = '1.6.0.4'
+  object edAN: TEdit
+    Left = 88
+    Height = 21
+    Top = 32
+    Width = 80
+    NumbersOnly = True
+    TabOrder = 0
+  end
+  object edBC: TEdit
+    Left = 176
+    Height = 21
+    Top = 32
+    Width = 80
+    NumbersOnly = True
+    TabOrder = 1
+  end
+  object cbCountryCode: TComboBox
+    Left = 16
+    Height = 21
+    Top = 32
+    Width = 64
+    ItemHeight = 13
+    Items.Strings = (
+      'AD'
+      'AE'
+      'AL'
+      'AT'
+      'AZ'
+      'BA'
+      'BE'
+      'BG'
+      'BH'
+      'BR'
+      'BY'
+      'CH'
+      'CR'
+      'CY'
+      'CZ'
+      'DE'
+      'DK'
+      'DO'
+      'EE'
+      'ES'
+      'FI'
+      'FO'
+      'FR'
+      'GB'
+      'GE'
+      'GI'
+      'GL'
+      'GR'
+      'GT'
+      'HR'
+      'HU'
+      'IE'
+      'IL'
+      'IQ'
+      'IS'
+      'IT'
+      'JO'
+      'KW'
+      'KZ'
+      'LB'
+      'LC'
+      'LI'
+      'LT'
+      'LU'
+      'LV'
+      'MC'
+      'MD'
+      'ME'
+      'MK'
+      'MR'
+      'MT'
+      'MU'
+      'NL'
+      'NO'
+      'PK'
+      'PL'
+      'PS'
+      'PT'
+      'QA'
+      'RO'
+      'RS'
+      'SA'
+      'SC'
+      'SE'
+      'SI'
+      'SK'
+      'SM'
+      'ST'
+      'SV'
+      'TL'
+      'TN'
+      'TR'
+      'UA'
+      'VG'
+      'XK'
+    )
+    Style = csDropDownList
+    TabOrder = 2
+  end
+  object edIBAN: TEdit
+    Left = 16
+    Height = 21
+    Top = 112
+    Width = 240
+    TabOrder = 3
+  end
+  object lbCountryCode: TLabel
+    Left = 16
+    Height = 13
+    Top = 16
+    Width = 58
+    Caption = 'Ländercode'
+    ParentColor = False
+  end
+  object lbAccountNumber: TLabel
+    Left = 88
+    Height = 13
+    Top = 16
+    Width = 71
+    Caption = 'Kontonummer'
+    ParentColor = False
+  end
+  object lbBankCode: TLabel
+    Left = 176
+    Height = 13
+    Top = 16
+    Width = 20
+    Caption = 'BLZ'
+    ParentColor = False
+  end
+  object lbIBAN: TLabel
+    Left = 16
+    Height = 13
+    Top = 96
+    Width = 25
+    Caption = 'IBAN'
+    Font.Height = -11
+    Font.Name = 'Roboto'
+    ParentColor = False
+    ParentFont = False
+  end
+  object btCreate: TButton
+    Left = 16
+    Height = 25
+    Top = 64
+    Width = 240
+    Caption = 'Create'
+    OnClick = btCreateClick
+    TabOrder = 4
+  end
+  object btCheck: TButton
+    Left = 16
+    Height = 25
+    Top = 144
+    Width = 240
+    Caption = 'Check'
+    OnClick = btCheckClick
+    TabOrder = 5
+  end
+  object lbFalse: TLabel
+    Left = 96
+    Height = 13
+    Top = 96
+    Width = 85
+    Caption = 'fehlerhafte IBAN'
+    Font.Color = clRed
+    Font.Height = -11
+    ParentColor = False
+    ParentFont = False
+    Visible = False
+  end
+  object lbTrue: TLabel
+    Left = 96
+    Height = 13
+    Top = 96
+    Width = 67
+    Caption = 'richtige IBAN'
+    Font.Color = clGreen
+    Font.Height = -11
+    ParentColor = False
+    ParentFont = False
+    Visible = False
+  end
+end

@@ -1,0 +1,92 @@
+object GTINCalc: TGTINCalc
+  Left = 1333
+  Height = 185
+  Top = 372
+  Width = 185
+  Caption = 'GTIN Calculator'
+  ClientHeight = 185
+  ClientWidth = 185
+  Constraints.MaxHeight = 185
+  Constraints.MaxWidth = 185
+  Constraints.MinHeight = 185
+  Constraints.MinWidth = 185
+  Font.Height = -11
+  Font.Name = 'Roboto'
+  LCLVersion = '1.6.0.4'
+  object edGTIN: TEdit
+    Left = 16
+    Height = 21
+    Top = 32
+    Width = 152
+    NumbersOnly = True
+    TabOrder = 0
+  end
+  object edGTINC: TEdit
+    Left = 16
+    Height = 21
+    Top = 112
+    Width = 152
+    NumbersOnly = True
+    TabOrder = 1
+  end
+  object btCreate: TButton
+    Left = 16
+    Height = 25
+    Top = 64
+    Width = 152
+    Caption = 'Create Checksum'
+    OnClick = btCreateClick
+    TabOrder = 2
+  end
+  object lbGTIN: TLabel
+    Left = 16
+    Height = 13
+    Top = 16
+    Width = 115
+    Caption = 'GTIN ohne Prüfsumme'
+    ParentColor = False
+  end
+  object btCheck: TButton
+    Left = 16
+    Height = 25
+    Top = 152
+    Width = 152
+    Caption = 'Check'
+    OnClick = btCheckClick
+    TabOrder = 3
+  end
+  object lbGTINC: TLabel
+    Left = 16
+    Height = 13
+    Top = 96
+    Width = 108
+    Caption = 'GTIN mit Prüfsumme'
+    ParentColor = False
+  end
+  object lbTrue: TLabel
+    Left = 56
+    Height = 13
+    Top = 136
+    Width = 67
+    Caption = 'richtige GTIN'
+    Font.Color = clGreen
+    Font.Height = -11
+    Font.Name = 'Roboto'
+    ParentColor = False
+    ParentFont = False
+    Visible = False
+  end
+  object lbFalse: TLabel
+    Left = 45
+    Height = 13
+    Top = 136
+    Width = 84
+    Caption = 'fehlerhafte GTIN'
+    Font.Color = clRed
+    Font.Height = -11
+    Font.Name = 'Roboto'
+    ParentColor = False
+    ParentFont = False
+    Visible = False
+  end
+end

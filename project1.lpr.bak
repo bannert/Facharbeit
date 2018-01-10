@@ -1,0 +1,24 @@
+program project1;
+
+{$mode objfpc}{$H+}
+
+uses
+  {$IFDEF UNIX}{$IFDEF UseCThreads}
+  cthreads,
+  {$ENDIF}{$ENDIF}
+  Interfaces, // this includes the LCL widgetset
+  Forms, uform1, uform2, uchecksum, uform3, uform4
+  { you can add units after this };
+
+{$R *.res}
+
+begin
+  RequireDerivedFormResource:=True;
+  Application.Initialize;
+  Application.CreateForm(TPrufsummen, Prufsummen);
+  Application.CreateForm(TIBANCalc, IBANCalc);
+  Application.CreateForm(TGTINCalc, GTINCalc);
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.
+
